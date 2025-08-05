@@ -10,14 +10,14 @@ public class Solution {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner sc = new Scanner(System.in);
         int n,row,space,star;
-        n = sc.nextInt();
+        n=sc.nextInt();
         
-        for(row = n; row >= 1; row--){
-            for(space = 1; space <=n-row; space++)
+        for(row = 1; row <= n; row++){
+            for(space = 1; space <= n-row; space++)
                 System.out.print(" ");
             for(star = 1; star <= row*2-1; star++)
                 System.out.print("*");
                 System.out.println();
         }
-        }
+    }
 }
